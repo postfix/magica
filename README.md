@@ -5,7 +5,7 @@ Magika is a file type identification tool that leverages machine learning models
 
 ## Features
 
-- Refactored module structure to allow direct usage as `github.com/postfix/magika`.
+- Refactored module structure to allow direct usage as `github.com/postfix/magika/magica`.
 - Installation script for required dependencies, including:
   - Microsoft's ONNX Runtime
 - Compatible with standard Go build workflows.
@@ -18,7 +18,7 @@ Magika is a file type identification tool that leverages machine learning models
 git clone https://github.com/postfix/setup-scripts.git
 cd setup-scripts
 sudo ./install_onnx_runtime.sh
-go install github.com/postfix/magika
+go install github.com/postfix/magika/magica
 ```
 ### LICENSE
 
