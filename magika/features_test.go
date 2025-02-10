@@ -14,7 +14,7 @@ import (
 )
 
 func TestExtractFeatures(t *testing.T) {
-	f, err := os.Open("../../tests_data/features_extraction/reference.json.gz")
+	f, err := os.Open("../tests_data/features_extraction/reference.json.gz")
 	if err != nil {
 		t.Fatal(err)
 	}

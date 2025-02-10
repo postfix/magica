@@ -12,7 +12,7 @@ import (
 )
 
 func TestScannerBasic(t *testing.T) {
-	const basicDir = "../../tests_data/basic"
+	const basicDir = "../tests_data/basic"
 	es, err := os.ReadDir(basicDir)
 	if err != nil {
 		t.Fatalf("read tests data: %v", err)
@@ -81,7 +81,7 @@ func TestScannerSmall(t *testing.T) {
 func newTestScanner(t *testing.T) *Scanner {
 	t.Helper()
 	const (
-		assetsDir = "../../assets"
+		assetsDir = "../assets"
 		modelName = "standard_v2_1"
 	)
 	s, err := NewScanner(assetsDir, modelName)

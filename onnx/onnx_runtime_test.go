@@ -12,9 +12,9 @@ import (
 
 func TestONNXRuntime(t *testing.T) {
 	const (
-		assetsDir = "../../assets"
+		assetsDir = "../assets"
 		modelName = "standard_v2_1"
-		modelPath = "../../assets/models/" + modelName + "/model.onnx"
+		modelPath = "../assets/models/" + modelName + "/model.onnx"
 	)
 
 	cfg, err := magika.ReadConfig(assetsDir, modelName)

@@ -18,8 +18,17 @@ Magika is a file type identification tool that leverages machine learning models
 git clone https://github.com/postfix/setup-scripts.git
 cd setup-scripts
 sudo ./install_onnx_runtime.sh
-go install github.com/postfix/magika/magica
+./test_and_build.sh
 ```
+* Do not forget set up environment variables before running your comiled program"
+
+####Example
+
+export MAGIKA_MODEL_DIR=assets/models
+export MAGIKA_MODEL=standard_v2_1
+
+
+
 ### LICENSE
 
 This project is part of the Magika, which is licensed under the Apache 2.0 License.
